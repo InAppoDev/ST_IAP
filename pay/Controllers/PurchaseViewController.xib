@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PurchaseViewController" customModule="pay" customModuleProvider="target">
+            <connections>
+                <outlet property="cover" destination="aoU-cc-Uzu" id="9n1-OS-qPh"/>
+                <outlet property="descriptionTextView" destination="UQy-AC-jas" id="W1i-ZA-noB"/>
+                <outlet property="monthButtonOutlet" destination="Wws-yY-wse" id="6IS-Vg-rld"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nUa-Eu-qRz"/>
+                <outlet property="yearButtonOutlet" destination="gNy-m9-kk3" id="tue-zr-xXZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purchase" translatesAutoresizingMaskIntoConstraints="NO" id="aoU-cc-Uzu">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="1gU-Pr-eR8"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-AC-jas">
+                    <rect key="frame" x="20" y="264" width="374" height="141.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Данное упражнение доступно для просмотра премиум пользователям. Приобретите премиум аккаунт сейчас, чтобы получить доступ к самым лучшим упражнениям</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="sKP-C4-WKq">
+                    <rect key="frame" x="20" y="425.5" width="374" height="118"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wws-yY-wse">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="xLD-eK-gpq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="74,99 грн./месяц">
+                                <color key="titleColor" red="0.79607843140000001" green="0.043137254899999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.79607843140000001" green="0.043137254899999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="monthButtonTapped:" destination="-1" eventType="touchUpInside" id="u9O-f1-sST"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNy-m9-kk3">
+                            <rect key="frame" x="0.0" y="68" width="374" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="589,99 грн./год(економия 34%)">
+                                <color key="titleColor" red="0.0078431372550000003" green="0.043137254899999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0078431372550000003" green="0.043137254899999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="yearButtonTapped:" destination="-1" eventType="touchUpInside" id="2cK-2Q-9yJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gNy-m9-kk3" firstAttribute="height" secondItem="Wws-yY-wse" secondAttribute="height" id="lO3-qy-Mgr"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aoU-cc-Uzu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3MM-Ga-Wig"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sKP-C4-WKq" secondAttribute="trailing" constant="20" id="9FU-b4-gwa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aoU-cc-Uzu" secondAttribute="trailing" id="Awj-eu-JTQ"/>
+                <constraint firstItem="UQy-AC-jas" firstAttribute="top" secondItem="aoU-cc-Uzu" secondAttribute="bottom" constant="20" id="C2e-Rm-kBa"/>
+                <constraint firstItem="sKP-C4-WKq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="G20-lO-QYd"/>
+                <constraint firstItem="aoU-cc-Uzu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="S7R-yL-s4x"/>
+                <constraint firstItem="sKP-C4-WKq" firstAttribute="top" secondItem="UQy-AC-jas" secondAttribute="bottom" constant="20" id="e4w-CR-17G"/>
+                <constraint firstItem="UQy-AC-jas" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="oTb-bz-YVl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UQy-AC-jas" secondAttribute="trailing" constant="20" id="yG0-Em-2zs"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="purchase" width="900" height="560"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
